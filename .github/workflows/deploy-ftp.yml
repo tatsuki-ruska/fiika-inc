@@ -6,6 +6,7 @@ on:
   repository_dispatch:
     branches: [main]
   workflow_dispatch:
+    branches: [main]
 
 jobs:
   build:
@@ -33,4 +34,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_REMOTE_ROOT }}
           local-dir: ./out/
-          dangerous-clean-slate: true
+          ARGS: --delete --parallel=20 -x media
