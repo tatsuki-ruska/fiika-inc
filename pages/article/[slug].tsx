@@ -127,7 +127,7 @@ export default function ArticlePage({
         <meta property="og:description" content={description} />
         <meta property="og:image" content={ogImage} />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="icon" href="/nextapp/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.Container}>
         <article v-if="currentArticle" className={styles.Article}>
@@ -139,7 +139,7 @@ export default function ArticlePage({
             <ul className={styles.Article_Tags}>
               {currentArticle.tags.map((tag) => (
                 <li key={tag._id}>
-                  <Link href={`/nextapp/tag/${tag.slug}`}>
+                  <Link href={`/tag/${tag.slug}`}>
                     <a>#{tag.name}</a>
                   </Link>
                 </li>
@@ -169,7 +169,7 @@ export default function ArticlePage({
                   )}
                 </a>
                 <div className={styles.Article_AuthorData}>
-                  <Link href={`/nextapp/author/${currentArticle.author.slug}`}>
+                  <Link href={`/author/${currentArticle.author.slug}`}>
                     <a className={styles.Article_AuthorName}>{authorName}</a>
                   </Link>
                   <time dateTime={publishDate} className={styles.Article_Date}>
@@ -268,7 +268,7 @@ export default function ArticlePage({
               )}
             </a>
             <div className={styles.Author_Text}>
-              <Link href={`/nextapp/author/${currentArticle.author.slug}`}>
+              <Link href={`/author/${currentArticle.author.slug}`}>
                 <a className={styles.Article_AuthorName}>{authorName}</a>
               </Link>
               <div
@@ -279,7 +279,7 @@ export default function ArticlePage({
           </aside>
           <nav className={styles.Links}>
             {prevArticle && (
-              <Link href={`/nextapp/article/${prevArticle.slug}`}>
+              <Link href={`/article/${prevArticle.slug}`}>
                 <a className={styles.Links_Previous}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

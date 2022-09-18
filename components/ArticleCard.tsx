@@ -11,7 +11,7 @@ export function ArticleCard({ article }: { article: Content & Article }) {
   }, [article]);
 
   return (
-    <Link href={`/nextapp/article/${article.slug}`}>
+    <Link href={`/article/${article.slug}`}>
       <a className={styles.Article}>
         <div className={styles.Article_Eyecatch}>
           {article.coverImage ? (
