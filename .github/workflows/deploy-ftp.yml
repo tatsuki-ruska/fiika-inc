@@ -27,12 +27,19 @@ jobs:
       - run: npm run build --if-present
       - run: npm run export
       - name: Deploy FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.2.0
-        with:
-          server: ${{ secrets.FTP_SERVER }}:${{ secrets.FTP_PORT }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: ${{ secrets.FTP_PORT}}
-          server-dir: ${{ secrets.FTP_REMOTE_ROOT }}
-          local-dir: ./out/
+        uses: SamKirkland/FTP-Deploy-Action@2.0.0
+        # uses: SamKirkland/FTP-Deploy-Action@4.3.2
+        env:
+          # with:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}:${{ secrets.FTP_PORT }}
+          # server: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          # username: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          # password: ${{ secrets.FTP_PASSWORD }}
+          # port: ${{ secrets.FTP_PORT}}
+          REMOTE_DIR: ${{ secrets.FTP_REMOTE_ROOT }}
+          # server-dir: ${{ secrets.FTP_REMOTE_ROOT }}
+          LOCAL_DIR: ./out/
+          # local-dir: ./out/
           dangerous-clean-slate: true
