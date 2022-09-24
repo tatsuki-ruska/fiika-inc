@@ -130,3 +130,4 @@ $ yarn start
 | ogImage | OG画像 | 画像 |  |# newt-sample
 # newt-sample
 # newt-sample
+# fiika-inc
