@@ -1,4 +1,4 @@
-const SUB_DIRECTORY = "/nextapp";
+const SUB_DIRECTORY = "/buildtest";
 
 /* 本番環境と開発環境の分岐用のフラグ */
 const isProd = process.env.NODE_ENV == "production";
