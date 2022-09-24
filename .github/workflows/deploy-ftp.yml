@@ -31,7 +31,7 @@ jobs:
         # uses: SamKirkland/FTP-Deploy-Action@4.3.2
         env:
           # with:
-          FTP_SERVER: ${{ secrets.FTP_SERVER }}:${{ secrets.FTP_PORT }}
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
           # server: ${{ secrets.FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           # username: ${{ secrets.FTP_USERNAME }}
@@ -44,5 +44,5 @@ jobs:
           LOCAL_DIR: ./out/
           # local-dir: ./out/
           METHOD: sftp
-          ARGS: --delete --dry-run
+          # ARGS: --delete --dry-run
           # dangerous-clean-slate: true
