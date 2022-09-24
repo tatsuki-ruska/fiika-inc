@@ -44,5 +44,5 @@ jobs:
           LOCAL_DIR: ./out/
           # local-dir: ./out/
           METHOD: sftp
-          ARGS: --delete --dry-run
+          # ARGS: --delete --dry-run
           # dangerous-clean-slate: true
