@@ -62,7 +62,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
               />
             </svg>
           </button>
-          <form action="/buildtest/search">
+          <form action="/blog/search">
             <div className={styles.Search_Input}>
               <input
                 ref={searchRef}
