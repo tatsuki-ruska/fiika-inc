@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useCallback, useEffect, useRef, useState } from "react";
 import styles from "../styles/Header.module.css";
+import LogoImage from "../assets/img/img-logo-01.png";
 
 export function Header({ app }: { app: AppMeta }): JSX.Element {
   const router = useRouter();
@@ -88,7 +89,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
           </div>
           <div className="header-bottom">
               <div className="logo-wrap">
-                  <p className="logo"><a href="/"><img src="/assets/img/img-logo-01.png" alt="fiika inc."></a></p>
+                  <p className="logo"><a href="/"><img src={LogoImage}></a></p>
                   <div className="openbtn"><span></span><span></span><span></span></div>
               </div>
               <nav>
