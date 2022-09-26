@@ -78,49 +78,49 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
     //   </div>
     // </header>
     <header>
-      <div class="inner">
-          <div class="header-top">
-              <p class="txt-description">株式会社フィーカは、東京都あきる野市のウェブ制作・情報設計・システム開発・ウェブコンサルの会社です。</p>
-              <div class="ht-inner">
+      <div className="inner">
+          <div className="header-top">
+              <p className="txt-description">株式会社フィーカは、東京都あきる野市のウェブ制作・情報設計・システム開発・ウェブコンサルの会社です。</p>
+              <div className="ht-inner">
                   <p><a href="/access/">Access Map</a></p>
                   <button><a href="/contact/">Contact</a></button>
               </div>
           </div>
-          <div class="header-bottom">
-              <div class="logo-wrap">
-                  <p class="logo"><a href="/"><img src="/assets/img/img-logo-01.png" alt="fiika inc."></a></p>
-                  <div class="openbtn"><span></span><span></span><span></span></div>
+          <div className="header-bottom">
+              <div className="logo-wrap">
+                  <p className="logo"><a href="/"><img src="/assets/img/img-logo-01.png" alt="fiika inc."></a></p>
+                  <div className="openbtn"><span></span><span></span><span></span></div>
               </div>
               <nav>
-                  <ul class="gnav">
-                      <li class="has-child round_arrow dropdown"><a href="/service/">Service</a>
+                  <ul className="gnav">
+                      <li className="has-child round_arrow dropdown"><a href="/service/">Service</a>
                           <ul>
-                          <li class="dropdown-category round_arrow">Service</li>
-                          <li class="dropdown-list"><a href="/service/">サービス内容一覧</a></li>
-                          <li class="dropdown-list"><a href="/service/web/">ホームページ制作</a></li>
-                          <li class="dropdown-list"><a href="/service/ec/">ネットショップ構築</a></li>
-                          <li class="dropdown-list"><a href="/service/movie/">動画制作・写真撮影</a></li>
-                          <li class="dropdown-list"><a href="/service/ia/">情報設計</a></li>
-                          <li class="dropdown-list"><a href="/service/writing/">記事作成代行サービス</a></li>
+                          <li className="dropdown-category round_arrow">Service</li>
+                          <li className="dropdown-list"><a href="/service/">サービス内容一覧</a></li>
+                          <li className="dropdown-list"><a href="/service/web/">ホームページ制作</a></li>
+                          <li className="dropdown-list"><a href="/service/ec/">ネットショップ構築</a></li>
+                          <li className="dropdown-list"><a href="/service/movie/">動画制作・写真撮影</a></li>
+                          <li className="dropdown-list"><a href="/service/ia/">情報設計</a></li>
+                          <li className="dropdown-list"><a href="/service/writing/">記事作成代行サービス</a></li>
                           </ul>
                       </li>
-                      <li><a class="round_arrow dropdown" href="/blog/tag/works.html">Works</a></li>
-                      <li class="has-child round_arrow dropdown"><a href="/about/">About</a>
+                      <li><a className="round_arrow dropdown" href="/blog/tag/works.html">Works</a></li>
+                      <li className="has-child round_arrow dropdown"><a href="/about/">About</a>
                           <ul>
-                              <li class="dropdown-category round_arrow">About</li>
-                              <li class="dropdown-list"><a href="/about/">会社概要</a></li>
-                              <li class="dropdown-list"><a href="/about/topmessage/">トップメッセージ</a></li>
+                              <li className="dropdown-category round_arrow">About</li>
+                              <li className="dropdown-list"><a href="/about/">会社概要</a></li>
+                              <li className="dropdown-list"><a href="/about/topmessage/">トップメッセージ</a></li>
                           </ul>
                       </li>
-                      <li class="has-child round_arrow dropdown"><a href="/careers/">Careers</a>
+                      <li className="has-child round_arrow dropdown"><a href="/careers/">Careers</a>
                           <ul>
-                          <li class="dropdown-category round_arrow">Careers</li>
-                          <li class="dropdown-list"><a href="/careers">採用情報</a></li>
-                          <li class="dropdown-list"><a href="/careers/entry/">採用エントリー</a></li>
+                          <li className="dropdown-category round_arrow">Careers</li>
+                          <li className="dropdown-list"><a href="/careers">採用情報</a></li>
+                          <li className="dropdown-list"><a href="/careers/entry/">採用エントリー</a></li>
                           </ul>
                       </li>
-                      <li><a class="round_arrow dropdown" href="/blog/">Blog & Topix</a></li>
-                      <li class="nav-button"><button><a href="/contact/">Contact</a></button></li>
+                      <li><a className="round_arrow dropdown" href="/blog/">Blog & Topix</a></li>
+                      <li className="nav-button"><button><a href="/contact/">Contact</a></button></li>
                   </ul>
               </nav>
           </div>
