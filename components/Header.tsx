@@ -89,39 +89,42 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
           </div>
           <div className="header-bottom">
               <div className="logo-wrap">
-                  <p className="logo"><a href="/"><img src={LogoImage}></a></p>
+                  <p className="logo">
+                    <Link href="/">
+                      <a><img src={LogoImage}></a></p>
+                    </Link>
                   <div className="openbtn"><span></span><span></span><span></span></div>
               </div>
               <nav>
                   <ul className="gnav">
-                      <li className="has-child round_arrow dropdown"><a href="/service/">Service</a>
+                      <li className="has-child round_arrow dropdown"><Link href="/service/"><a>Service</a></Link>
                           <ul>
                           <li className="dropdown-category round_arrow">Service</li>
-                          <li className="dropdown-list"><a href="/service/">サービス内容一覧</a></li>
-                          <li className="dropdown-list"><a href="/service/web/">ホームページ制作</a></li>
-                          <li className="dropdown-list"><a href="/service/ec/">ネットショップ構築</a></li>
-                          <li className="dropdown-list"><a href="/service/movie/">動画制作・写真撮影</a></li>
-                          <li className="dropdown-list"><a href="/service/ia/">情報設計</a></li>
-                          <li className="dropdown-list"><a href="/service/writing/">記事作成代行サービス</a></li>
+                          <li className="dropdown-list"><Link href="/service/"><a>サービス内容一覧</a></Link></li>
+                          <li className="dropdown-list"><Link href="/service/web/"><a>ホームページ制作</a></Link></li>
+                          <li className="dropdown-list"><Link href="/service/ec/"><a>ネットショップ構築</a></Link></li>
+                          <li className="dropdown-list"><Link href="/service/movie/"><a>動画制作・写真撮影</a></Link></li>
+                          <li className="dropdown-list"><Link href="/service/ia/"><a>情報設計</a></Link></li>
+                          <li className="dropdown-list"><Link href="/service/writing/"><a>記事作成代行サービス</a></Link></li>
                           </ul>
                       </li>
-                      <li><a className="round_arrow dropdown" href="/blog/tag/works.html">Works</a></li>
-                      <li className="has-child round_arrow dropdown"><a href="/about/">About</a>
+                      <li><Link href="/"><a className="round_arrow dropdown">Works</a></Link></li>
+                      <li className="has-child round_arrow dropdown"><Link href="/about/"><a>About</a></Link>
                           <ul>
                               <li className="dropdown-category round_arrow">About</li>
-                              <li className="dropdown-list"><a href="/about/">会社概要</a></li>
-                              <li className="dropdown-list"><a href="/about/topmessage/">トップメッセージ</a></li>
+                              <li className="dropdown-list"><Link href="/about/"><a>会社概要</a></Link></li>
+                              <li className="dropdown-list"><Link href="/about/topmessage/"><a>トップメッセージ</a></Link></li>
                           </ul>
                       </li>
-                      <li className="has-child round_arrow dropdown"><a href="/careers/">Careers</a>
+                      <li className="has-child round_arrow dropdown"><Link href="/careers/"><a>Careers</a></Link>
                           <ul>
                           <li className="dropdown-category round_arrow">Careers</li>
-                          <li className="dropdown-list"><a href="/careers">採用情報</a></li>
-                          <li className="dropdown-list"><a href="/careers/entry/">採用エントリー</a></li>
+                          <li className="dropdown-list"><Link href="/careers/"><a>採用情報</a></Link></li>
+                          <li className="dropdown-list"><Link href="/careers/entry/"><a>採用エントリー</a></Link></li>
                           </ul>
                       </li>
-                      <li><a className="round_arrow dropdown" href="/blog/">Blog & Topix</a></li>
-                      <li className="nav-button"><button><a href="/contact/">Contact</a></button></li>
+                      <li><Link href="/contact/"><a className="round_arrow dropdown">Blog & Topix</a></Link></li>
+                      <li className="nav-button"><button><Link href="/contact/"><a>Contact</a></Link></button></li>
                   </ul>
               </nav>
           </div>
