@@ -38,8 +38,9 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
               <div className="logo-wrap">
                   <p className="logo">
                     <Link href="/">
-                      <a href="#"><img src={LogoImage} /></a></p>
+                      <a href="#"><img src={LogoImage} /></a>
                     </Link>
+                  </p>
                   <div className="openbtn"><span></span><span></span><span></span></div>
               </div>
               <nav>
