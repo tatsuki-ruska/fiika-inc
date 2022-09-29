@@ -26,7 +26,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
   return (
     <header>
       <div className={style.inner}>
-          <div className="header-top">
+          <div className={style.header-top}>
               <p className="txt-description">株式会社フィーカは、東京都あきる野市のウェブ制作・情報設計・システム開発・ウェブコンサルの会社です。</p>
               <div className="ht-inner">
                   <p><Link href="/"><a href="#">Access Map</a></Link></p>
