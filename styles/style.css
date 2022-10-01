@@ -313,6 +313,7 @@ body {
 header {
   width: 100%;
   min-width: 1280px;
+  position: fixed;
   z-index: 3;
   background: #FEF343;
 }
@@ -609,6 +610,16 @@ header .inner .header-bottom ul.gnav li:hover .dropdown-lists {
 
 header .inner .header-bottom ul.gnav li .dropdown-lists:hover {
   display: block;
+}
+
+.Cover_Cover__F_KhT{
+  margin-top: 133px;
+}
+
+@media screen and (max-width: 1024px) {
+  .Cover_Cover__F_KhT {
+    margin-top: 73px;
+  }
 }
 
 .dropdown-list {
