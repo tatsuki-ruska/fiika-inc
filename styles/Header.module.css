@@ -140,10 +140,6 @@
 
 
 
-
-
-@charset "UTF-8";
-/* Webフォントを定義 */
 @font-face {
   font-family: 'lobster';
   src: url("/assets/fonts/Lobster1.4.otf") format("opentype");
