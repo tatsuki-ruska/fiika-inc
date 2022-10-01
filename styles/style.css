@@ -65,6 +65,8 @@ input, select, textarea {
 
 button, label {
   cursor: pointer;
+  background: none;
+  border: 0;
 }
 
 button:active {
@@ -311,7 +313,6 @@ body {
 header {
   width: 100%;
   min-width: 1280px;
-  position: fixed;
   z-index: 3;
   background: #FEF343;
 }
