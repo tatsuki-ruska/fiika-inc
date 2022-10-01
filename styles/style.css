@@ -4621,5 +4621,5 @@ footer .footer-inner .footer-bottom .copyright {
 
 
 .Badge_Badge__AFPif{
-  display: none;
+  display: none!important;
 }
