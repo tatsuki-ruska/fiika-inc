@@ -2,7 +2,7 @@ import { AppMeta } from "newt-client-js";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useCallback, useEffect, useRef, useState } from "react";
-import styles from "./styles/style.css";
+import styles from "../styles/Header.module.css";
 
 export function Header({ app }: { app: AppMeta }): JSX.Element {
   const router = useRouter();
@@ -25,8 +25,8 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
 
   return (
     <header>
-      <div className={style.inner}>
-          <div className={style.header-top}>
+      <div className="inner">
+          <div className="header-top">
               <p className="txt-description">株式会社フィーカは、東京都あきる野市のウェブ制作・情報設計・システム開発・ウェブコンサルの会社です。</p>
               <div className="ht-inner">
                   <p><Link href="/"><a href="#">Access Map</a></Link></p>
@@ -37,7 +37,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
               <div className="logo-wrap">
                   <p className="logo">
                     <Link href="/">
-                      <a href="#"><img src="/assets/img/img-logo-01.png" /></a>
+                      <a href="#"><img src="./../img-logo-01.png" /></a>
                     </Link>
                   </p>
                   <div className="openbtn"><span></span><span></span><span></span></div>
