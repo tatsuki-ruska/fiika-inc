@@ -4,33 +4,61 @@ import styles from "../styles/Footer.module.css";
 
 export function Footer({ app }: { app: AppMeta }) {
   return (
-    <footer className={styles.Footer}>
-      <div className={styles.Footer_Inner}>
-        <Link href="/">
-          <a href="#" className={styles.SiteName}>
-            {app.icon?.type === "emoji" && (
-              <span className={styles.SiteName_Icon}>{app.icon.value}</span>
-            )}
-            {app.icon?.type === "image" && (
-              <span className={styles.SiteName_Icon}>
-                <img src={app.icon.value} alt="" />
-              </span>
-            )}
-            <div className={styles.SiteName_Text}>
-              {app.name || app.uid || ""}
-            </div>
-          </a>
-        </Link>
-        <div className={styles.Link}>
-          <a
-            href="https://github.com/Newt-Inc/newt-blog-starter-nextjs"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            GitHub
-          </a>
-        </div>
-      </div>
-    </footer>
+<footer>
+  <div className="footer-inner">
+    <div className="footer-top">
+      <ul className="fnav">
+        <li className="nav-button sp"><button><a href="/contact/">Contact</a></button></li>
+        <li className="footer-logo"><img src="/assets/img/img-logo-02.png" alt="fiika inc." /></li>
+        <li className="footer-arrow dropdown sp"><a href="/">Top page</a></li>
+        <li className="has-child footer-arrow dropdown"><a href>Service</a>
+          <ul>
+            <li className="dropdown-category footer-arrow">Service</li>
+            <li className="dropdown-list"><a href="/service/">サービス内容一覧</a></li>
+            <li className="dropdown-list"><a href="/service/web/">ホームページ制作</a></li>
+            <li className="dropdown-list"><a href="/service/ec/">ネットショップ構築</a></li>
+            <li className="dropdown-list"><a href="/service/movie/">動画制作・写真撮影</a></li>
+            <li className="dropdown-list"><a href="/service/ia/">情報設計</a></li>
+            <li className="dropdown-list"><a href="/service/writing/">記事作成代行サービス</a></li>
+          </ul>
+        </li>
+        <li className="has-child footer-arrow dropdown"><a href>Works</a>
+          <ul>
+            <li className="dropdown-category footer-arrow">Works</li>
+            <li className="dropdown-list"><a href="/about/">制作実績・コンサルティング実績</a></li>
+          </ul>
+        </li>
+        <li className="has-child footer-arrow dropdown"><a href>About</a>
+          <ul>
+            <li className="dropdown-category footer-arrow">About</li>
+            <li className="dropdown-list"><a href="/about/">会社概要</a></li>
+            <li className="dropdown-list"><a href="/about/topmessage/">トップメッセージ</a></li>
+          </ul>
+        </li>
+        <li className="has-child footer-arrow dropdown"><a href>Careers</a>
+          <ul>
+            <li className="dropdown-category footer-arrow">Careers</li>
+            <li className="dropdown-list"><a href="/careers">採用情報</a></li>
+            <li className="dropdown-list"><a href="/careers/entry/">採用エントリー</a></li>
+          </ul>
+        </li>
+        <li className="has-child footer-arrow dropdown"><a href>Blog &amp; Topics</a>
+          <ul>
+            <li className="dropdown-category footer-arrow">Blog &amp; Topics</li>
+            <li className="dropdown-list"><a href="/about/">ブログ＆トピックス一覧</a></li>
+          </ul>
+        </li>
+        <li className="footer-arrow dropdown sp"><a href="/access/">Access Map</a></li>
+        <li className="nav-button pc"><button><a href="/contact/">Contact</a></button></li>
+      </ul>
+    </div>
+    <div className="footer-bottom">
+      <p className="privacypolicy"><a href="/privacypolicy/">プライバシーポリシー</a></p>
+      <p className="privacypolicy"><a href="/Security/">情報セキュリティ方針</a></p>
+      <p className="copyright">©Fiika inc.</p>
+    </div>
+  </div>
+</footer>
+
   );
 }

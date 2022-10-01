@@ -137,7 +137,6 @@ textarea:-ms-input-placeholder {
 hr {
   max-width: 1320px;
   margin: 2.5em auto;
-  border: 2px solid #2367bb;
 }
 
 .mb-00 {
@@ -612,12 +611,14 @@ header .inner .header-bottom ul.gnav li .dropdown-lists:hover {
   display: block;
 }
 
-header + div{
+header + div,
+header + article {
   margin-top: 133px;
 }
 
 @media screen and (max-width: 1024px) {
-  header + div {
+  header + div,
+  header + article {
     margin-top: 73px;
   }
 }
