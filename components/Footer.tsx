@@ -23,7 +23,7 @@ export function Footer({ app }: { app: AppMeta }) {
         <li className="has-child footer-arrow dropdown"><a>Works</a>
           <ul>
             <li className="dropdown-category footer-arrow">Works</li>
-            <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/blog/tag/works"><a>制作実績・コンサルティング実績</a></Link></li>
+            <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/blog/tag/works.html"><a>制作実績・コンサルティング実績</a></Link></li>
           </ul>
         </li>
         <li className="has-child footer-arrow dropdown"><a>About</a>

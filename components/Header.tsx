@@ -54,7 +54,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
                           </ul>
                       </li>
                       <li><Link href="https://fiika-inc.sakura.ne.jp/blog/tag/works/"><a className="round_arrow dropdown">Works</a></Link></li>
-                      <li className="has-child round_arrow dropdown"><Link href="https://fiika-inc.sakura.ne.jp/blog/tag/works"><a>Works</a></Link>
+                      <li className="has-child round_arrow dropdown"><Link href="https://fiika-inc.sakura.ne.jp/blog/tag/works.html"><a>Works</a></Link>
                           <ul>
                               <li className="dropdown-category round_arrow">About</li>
                               <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/about/"><a>会社概要</a></Link></li>
