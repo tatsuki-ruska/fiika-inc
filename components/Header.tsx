@@ -56,7 +56,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
                           </ul>
                       </li>
                       <li><Link href="/"><a className="round_arrow dropdown">Works</a></Link></li>
-                      <li className="has-child round_arrow dropdown"><Link href="./../about/"><a>About</a></Link>
+                      <li className="has-child round_arrow dropdown"><Link href="./../blog/tag/works/"><a>Works</a></Link>
                           <ul>
                               <li className="dropdown-category round_arrow">About</li>
                               <li className="dropdown-list"><Link href="./../about/"><a>会社概要</a></Link></li>
@@ -67,10 +67,10 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
                           <ul>
                           <li className="dropdown-category round_arrow">Careers</li>
                           <li className="dropdown-list"><Link href="./../careers/"><a>採用情報</a></Link></li>
-                          <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/careers/entry/"><a>採用エントリー</a></Link></li>
+                          <li className="dropdown-list"><Link href="./../careers/entry/"><a>採用エントリー</a></Link></li>
                           </ul>
                       </li>
-                      <li><Link href="/"><a className="round_arrow dropdown">Blog & Topix</a></Link></li>
+                      <li><Link href="./../blog/"><a className="round_arrow dropdown">Blog & Topics</a></Link></li>
                       <li className="nav-button"><button><Link href="../contact/"><a>Contact</a></Link></button></li>
                   </ul>
               </nav>
