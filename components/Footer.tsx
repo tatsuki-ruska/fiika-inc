@@ -16,9 +16,7 @@ export function Footer({ app }: { app: AppMeta }) {
             <li className="dropdown-category footer-arrow">Service</li>
             <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/"><a>サービス内容一覧</a></Link></li>
             <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/web/"><a>ホームページ制作</a></Link></li>
-            <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/ec/"><a>ネットショップ構築</a></Link></li>
-            <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/movie/"><a>動画制作・写真撮影</a></Link></li>
-            <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/ia/"><a>情報設計</a></Link></li>
+            <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/ia/"><a>UI/UX・情報設計</a></Link></li>
             <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/writing/"><a>記事作成代行サービス</a></Link></li>
           </ul>
         </li>
