@@ -4,6 +4,17 @@ import { useRouter } from "next/router";
 import { useCallback, useEffect, useRef, useState } from "react";
 import styles from "../styles/Header.module.css";
 
+let btn = document.querySelector('.openbtn');
+let box = document.querySelector('.header-bottom');
+ 
+let btnToggleclass = function(el) {
+  el.classList.toggle('active');
+}
+ 
+btn.addEventListener('click', function() {
+  btnToggleclass(box);
+}, false);
+
 export function Header({ app }: { app: AppMeta }): JSX.Element {
   const router = useRouter();
   const { q } = router.query;
