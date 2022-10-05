@@ -1,6 +1,9 @@
 import '../styles/globals.css'
 import '../styles/style.css'
-import '../js/jquery-3.4.1.min.js'
+
+import React from 'react';
+import { findDOMNode } from 'react-dom';
+import $ from 'jquery';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
