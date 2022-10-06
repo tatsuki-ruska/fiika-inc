@@ -59,7 +59,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
           </div>
           <nav>
             <ul className="gnav">
-              <li className="has-child round_arrow dropdown"><Link href="https://fiika-inc.sakura.ne.jp/service/"><a>Service</a></Link>
+              <li className="has-child round_arrow dropdown"><a>Service</a>
                 <ul>
                   <li className="dropdown-category round_arrow">Service</li>
                   <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/"><a>サービス内容一覧</a></Link></li>
@@ -69,14 +69,14 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
                 </ul>
               </li>
               <li><Link href="https://fiika-inc.sakura.ne.jp/blog/tag/works.html"><a className="round_arrow dropdown">Works</a></Link></li>
-              <li className="has-child round_arrow dropdown"><Link href="https://fiika-inc.sakura.ne.jp/blog/tag/works.html"><a>About</a></Link>
+              <li className="has-child round_arrow dropdown"><a>About</a>
                 <ul>
                   <li className="dropdown-category round_arrow">About</li>
                   <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/about/"><a>会社概要</a></Link></li>
                   <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/about/topmessage/"><a>トップメッセージ</a></Link></li>
                 </ul>
               </li>
-              <li className="has-child round_arrow dropdown"><Link href="https://fiika-inc.sakura.ne.jp/careers/"><a>Careers</a></Link>
+              <li className="has-child round_arrow dropdown"><a>Careers</a>
                 <ul>
                   <li className="dropdown-category round_arrow">Careers</li>
                   <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/careers/"><a>採用情報</a></Link></li>
