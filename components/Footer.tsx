@@ -51,8 +51,9 @@ export function Footer({ app }: { app: AppMeta }) {
       </ul>
     </div>
     <div className="footer-bottom">
-      <p className="privacypolicy"><Link href="https://fiika-inc.sakura.ne.jp/privacypolicy/"><a>プライバシーポリシー</a></Link></p>
-      <p className="privacypolicy"><Link href="https://fiika-inc.sakura.ne.jp/Security/"><a>情報セキュリティ方針</a></Link></p>
+      <p className="privacypolicy">
+      <Link href="https://fiika-inc.sakura.ne.jp/privacypolicy/"><a style={{marginRight: '2rem'}}>プライバシーポリシー</a></Link>
+      <Link href="https://fiika-inc.sakura.ne.jp/Security/"><a>情報セキュリティ方針</a></Link></p>
       <p className="copyright">©Fiika inc.</p>
     </div>
   </div>
