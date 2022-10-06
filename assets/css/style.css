@@ -2007,7 +2007,7 @@ footer .footer-inner .footer-bottom .copyright {
 @media screen and (max-width: 1024px) {
   .works-slide .works-inner .works-title p::before {
     left: initial;
-    right: 13rem;
+    right: 15rem;
   }
 }
 
@@ -2029,7 +2029,7 @@ footer .footer-inner .footer-bottom .copyright {
 @media screen and (max-width: 1024px) {
   .works-slide .works-inner .works-title p::after {
     left: initial;
-    right: 13.8rem;
+    right: 15.8rem;
   }
 }
 

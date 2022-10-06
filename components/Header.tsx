@@ -39,7 +39,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
   return (
     <header>
       <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer />
-      <script src="https://fiika-inc.sakura.ne.jp/assets/js/main.js" defer />
+      <script src="https://fiika-inc.sakura.ne.jp/assets/js/blog.js" defer />
       <div className="inner">
         <div className="header-top">
           <p className="txt-description">株式会社フィーカは、東京都あきる野市のウェブ制作・情報設計・システム開発・ウェブコンサルの会社です。</p>
