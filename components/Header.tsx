@@ -36,9 +36,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
     }
   }, [q]);
 
-  return (
-    <><script src=""></script>
-    
+  return (    
     <header>
       <div className="inner">
         <div className="header-top">
