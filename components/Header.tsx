@@ -11,18 +11,18 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
 
   const [searchText, setSearchText] = useState(q);
 
-  useEffect(() => {
-    const head = document.getElementsByTagName('head')[0] as HTMLElement;
-    const scriptUrljQuery = document.createElement('script');
-    scriptUrljQuery.type = 'text/javascript';
-    scriptUrljQuery.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
-    head.appendChild(scriptUrljQuery);
+//   useEffect(() => {
+//     const head = document.getElementsByTagName('head')[0] as HTMLElement;
+//     const scriptUrljQuery = document.createElement('script');
+//     scriptUrljQuery.type = 'text/javascript';
+//     scriptUrljQuery.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
+//     head.appendChild(scriptUrljQuery);
 
-    const scriptUrl = document.createElement('script');
-    scriptUrl.type = 'text/javascript';
-    scriptUrl.src = 'https://fiika-inc.sakura.ne.jp/assets/js/main.js';
-    head.appendChild(scriptUrl);
-}, []);
+//     const scriptUrl = document.createElement('script');
+//     scriptUrl.type = 'text/javascript';
+//     scriptUrl.src = 'https://fiika-inc.sakura.ne.jp/assets/js/main.js';
+//     head.appendChild(scriptUrl);
+// }, []);
 
   const focus = useCallback(() => {
     if (searchRef.current) {
@@ -36,8 +36,10 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
     }
   }, [q]);
 
-  return (    
+  return (
     <header>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer />
+      <script src="https://fiika-inc.sakura.ne.jp/assets/js/main.js" defer />
       <div className="inner">
         <div className="header-top">
           <p className="txt-description">株式会社フィーカは、東京都あきる野市のウェブ制作・情報設計・システム開発・ウェブコンサルの会社です。</p>
