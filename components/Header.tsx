@@ -87,6 +87,6 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
           </nav>
         </div>
       </div>
-    </header></>
+    </header>
   );
 }
