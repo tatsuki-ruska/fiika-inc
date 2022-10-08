@@ -41,11 +41,11 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
   return (
     <header>
       <Script
-        src="/js/jquery-3.4.1.min.js"
+        src="/assets/js/jquery-3.4.1.min.js"
         strategy="afterInteractive"
       />
       <Script
-        src="/js/blog.js"
+        src="/assets/js/blog.js"
         strategy="afterInteractive"
       />
       {/* <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer />
