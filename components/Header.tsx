@@ -41,7 +41,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
   return (
     <header>
       <Script
-        src="/assets/js/jquery-3.4.1.min.js"
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
         strategy="afterInteractive"
       />
       <Script
