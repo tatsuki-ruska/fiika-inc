@@ -1374,7 +1374,10 @@ footer .footer-inner .footer-bottom {
 
 @media screen and (max-width: 1024px) {
   footer .footer-inner .footer-bottom .privacypolicy {
-    padding: 0 2rem 1rem;
+    width: calc(100% - 30px);
+    margin: 0 1.5rem;
+    padding: 2rem 4rem 2rem;
+    border-top: 2px solid #000;
   }
 }
 
