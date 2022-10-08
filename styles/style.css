@@ -559,7 +559,10 @@ header .inner .header-bottom ul.gnav .nav-bottom {
     display: block;
   }
   header .inner .header-bottom ul.gnav .nav-bottom .privacypolicy {
-    padding: 0 5rem 1rem;
+    width: calc(100% - 30px);
+    margin: 0 1.5rem;
+    padding: 2rem 4rem 2rem;
+    border-top: 2px solid #000;
   }
   header .inner .header-bottom ul.gnav .nav-bottom .privacypolicy a {
     display: block;
