@@ -57,8 +57,7 @@ export function Footer({ app }: { app: AppMeta }) {
       <p className="copyright">©Fiika inc.</p>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer />
-  <script src="https://fiika-inc.sakura.ne.jp/assets/js/blog.js" defer />
+
 </footer>
 
   );

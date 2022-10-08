@@ -4,6 +4,8 @@ import { useRouter } from "next/router";
 import { useCallback, useEffect, useRef, useState } from "react";
 // import styles from "../styles/Header.module.css";
 
+import Script from 'next/script';
+
 export function Header({ app }: { app: AppMeta }): JSX.Element {
   const router = useRouter();
   const { q } = router.query;
@@ -38,6 +40,16 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
 
   return (
     <header>
+      <Script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        strategy="beforeInteractive"
+      />
+      <Script
+        src="https://fiika-inc.sakura.ne.jp/assets/js/blog.js"
+        strategy="beforeInteractive"
+      />
+      {/* <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer />
+      <script src="https://fiika-inc.sakura.ne.jp/assets/js/blog.js" defer /> */}
       <div className="inner">
         <div className="header-top">
           <p className="txt-description">株式会社フィーカは、東京都あきる野市のウェブ制作・情報設計・システム開発・ウェブコンサルの会社です。</p>
