@@ -45,7 +45,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
         strategy="afterInteractive"
       />
       <Script
-        src="/assets/js/blog.js"
+        src="https://fiika-inc.sakura.ne.jp/assets/js/blog.js"
         strategy="afterInteractive"
       />
       {/* <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer />
