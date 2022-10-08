@@ -85,6 +85,13 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
               </li>
               <li><Link href="https://fiika-inc.sakura.ne.jp/blog/"><a className="round_arrow dropdown">Blog & Topics</a></Link></li>
               <li className="nav-button"><button><Link href="https://fiika-inc.sakura.ne.jp/contact/"><a>Contact</a></Link></button></li>
+
+              <div class="nav-bottom">
+                        <p class="privacypolicy">
+                            <a style="margin-right:2rem" href="https://fiika-inc.sakura.ne.jp/privacypolicy/">プライバシーポリシー</a>
+                            <a href="https://fiika-inc.sakura.ne.jp/Security/">情報セキュリティ方針</a>
+                        </p>
+              </div>
             </ul>
           </nav>
         </div>

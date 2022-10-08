@@ -550,6 +550,47 @@ header .inner .header-bottom ul.gnav > li > a:hover {
   }
 }
 
+header .inner .header-bottom ul.gnav .nav-bottom {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  header .inner .header-bottom ul.gnav .nav-bottom {
+    display: block;
+  }
+  header .inner .header-bottom ul.gnav .nav-bottom .privacypolicy {
+    padding: 0 5rem 1rem;
+  }
+  header .inner .header-bottom ul.gnav .nav-bottom .privacypolicy a {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    padding: 0 0 0 2rem;
+    color: #000;
+    position: relative;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  header .inner .header-bottom ul.gnav .nav-bottom .privacypolicy a:hover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    text-decoration: underline;
+  }
+  header .inner .header-bottom ul.gnav .nav-bottom .privacypolicy a:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+  }
+}
+
+
 .round_arrow {
   position: relative;
 }
