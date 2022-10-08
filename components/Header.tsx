@@ -41,12 +41,12 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
   return (
     <header>
       <Script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        strategy="lazyOnload"
+        src="/js/jquery-3.4.1.min.js"
+        strategy="afterInteractive"
       />
       <Script
-        src="https://fiika-inc.sakura.ne.jp/assets/js/blog.js"
-        strategy="lazyOnload"
+        src="/js/blog.js"
+        strategy="afterInteractive"
       />
       {/* <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer />
       <script src="https://fiika-inc.sakura.ne.jp/assets/js/blog.js" defer /> */}
