@@ -87,10 +87,10 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
               <li><Link href="https://fiika-inc.sakura.ne.jp/access/"><a className="round_arrow dropdown">Access Map</a></Link></li>
               <li className="nav-button"><button><Link href="https://fiika-inc.sakura.ne.jp/contact/"><a>Contact</a></Link></button></li>
 
-              <div class="nav-bottom">
-                        <p class="privacypolicy">
-                            <a style="margin-right:2rem" href="https://fiika-inc.sakura.ne.jp/privacypolicy/">プライバシーポリシー</a>
-                            <a href="https://fiika-inc.sakura.ne.jp/Security/">情報セキュリティ方針</a>
+              <div className="nav-bottom">
+                        <p className="privacypolicy">
+                            <Link href="https://fiika-inc.sakura.ne.jp/privacypolicy/"><a>プライバシーポリシー</a></Link>
+                            <Link href="https://fiika-inc.sakura.ne.jp/Security/"><a>情報セキュリティ方針</a></Link>
                         </p>
               </div>
             </ul>
