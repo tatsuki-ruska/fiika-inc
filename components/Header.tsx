@@ -60,7 +60,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
           <nav>
             <ul className="gnav">
               <li className="has-child round_arrow dropdown"><a>Service</a>
-                <ul>
+                <ul className="ul-service">
                   <li className="dropdown-category round_arrow">Service</li>
                   <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/"><a>サービス内容一覧</a></Link></li>
                   <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/web/"><a>ホームページ制作</a></Link></li>
@@ -70,7 +70,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
               </li>
               <li><Link href="https://fiika-inc.sakura.ne.jp/blog/tag/works.html"><a className="round_arrow dropdown">Works</a></Link></li>
               <li className="has-child round_arrow dropdown"><a>About</a>
-                <ul>
+                <ul className="ul-about">
                   <li className="dropdown-category round_arrow">About</li>
                   <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/about/"><a>会社概要</a></Link></li>
                   <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/about/topmessage/"><a>トップメッセージ</a></Link></li>

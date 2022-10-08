@@ -826,6 +826,14 @@ header + main {
   }
 }
 
+.header-bottom nav li.has-child ul.ul-service {
+  left: -1px;
+}
+
+.header-bottom nav li.has-child ul.ul-about {
+  left: -5px;
+}
+
 .header-bottom nav li.has-child ul li.dropdown-category {
   margin: 0;
   padding: 1rem 5rem 1rem 7rem;
