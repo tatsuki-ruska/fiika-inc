@@ -38,9 +38,9 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
     }
   }, [q]);
 
-  setTimeout(() => {
-    location.reload();
-  }, 1000);
+  // setTimeout(() => {
+  //   location.reload();
+  // }, 1000);
 
   let i = 0;
 
