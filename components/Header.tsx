@@ -38,10 +38,6 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
     }
   }, [q]);
 
-  // setTimeout(() => {
-  //   location.reload();
-  // }, 1000);
-
   // let i = 0;
 
   // let result = function() {
@@ -57,6 +53,10 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
   if (window.location.search.indexOf("?blog") == -1) {
     window.location.search += "?blog";
   }
+
+  setTimeout(() => {
+    location.reload();
+  }, 1000);
 
   window.onload = function() {
     if (window.location.search.indexOf('?blog') !== -1) {
