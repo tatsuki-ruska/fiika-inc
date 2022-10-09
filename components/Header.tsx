@@ -50,6 +50,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
       /> */}
       <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer />
       <script src="https://fiika-inc.sakura.ne.jp/assets/js/blog.js" defer />
+      location.reload();
       <div className="inner">
         <div className="header-top">
           <p className="txt-description">株式会社フィーカは、東京都あきる野市のウェブ制作・情報設計・システム開発・ウェブコンサルの会社です。</p>
@@ -78,7 +79,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
                   <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/writing/"><a>記事作成代行サービス</a></Link></li>
                 </ul>
               </li>
-              <li><Link href="https://fiika-inc.sakura.ne.jp/blog/tag/works.html"><a className="round_arrow dropdown">Works</a></Link></li>
+              <li><a href="https://fiika-inc.sakura.ne.jp/blog/tag/works.html" className="round_arrow dropdown">Works</a></li>
               <li className="has-child round_arrow dropdown"><a>About</a>
                 <ul className="ul-about">
                   <li className="dropdown-category round_arrow">About</li>
