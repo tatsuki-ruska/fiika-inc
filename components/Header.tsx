@@ -54,20 +54,20 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
   // }
   // result();
 
-  let i = 0;
+  // let i = 0;
 
-  let result = function() {
-    i++;
-    console.log(i);
-    let time =   setTimeout(() => {location.reload();}, 1000);
-    if (window.location.search.indexOf("?blog") == -1) {
-      window.location.search += "?blog";
-    }
-    if (window.location.search.indexOf('?blog') !== -1) {
-      clearTimeout(time);
-    }
-  }
-  result();
+  // let result = function() {
+  //   i++;
+  //   console.log(i);
+  //   let time =   setTimeout(() => {location.reload();}, 1000);
+  //   if (window.location.search.indexOf("?blog") == -1) {
+  //     window.location.search += "?blog";
+  //   }
+  //   if (window.location.search.indexOf('?blog') !== -1) {
+  //     clearTimeout(time);
+  //   }
+  // }
+  // result();
 
   // if (window.location.search.indexOf("?blog") == -1) {
   //   window.location.search += "?blog";
