@@ -38,9 +38,15 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
     }
   }, [q]);
 
-  // setTimeout(() => {
-  //   location.reload();
-  // }, 1000);
+  setTimeout(() => {
+    // location.reload();
+    if (window.location.search.indexOf("?blog") == -1) {
+      window.location.search += "?blog";
+    }
+    if (window.location.search.indexOf('?blog') !== -1) {
+      clearTimeout();
+    }
+  }, 1000);
 
   // let i = 0;
 
@@ -60,6 +66,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
   //   i++;
   //   console.log(i);
   //   let time =   setTimeout(() => {location.reload();}, 1000);
+    
   //   if (window.location.search.indexOf("?blog") == -1) {
   //     window.location.search += "?blog";
   //   }
