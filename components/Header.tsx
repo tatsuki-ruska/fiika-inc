@@ -38,16 +38,16 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
     }
   }, [q]);
 
-  // setTimeout(() => {
-  //   location.reload();
-  // }, 1000);
+  setTimeout(() => {
+    location.reload();
+  }, 1000);
 
   let i = 0;
 
   let result = function() {
     i++;
-    location.reload();
-    let time = setTimeout(result, 2000);
+    console.log(i);
+    let time =   setTimeout(() => {location.reload();}, 1000);
     if (i >= 5) {
       clearTimeout(time);
     }
