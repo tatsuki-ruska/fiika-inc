@@ -60,7 +60,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
 
   window.onload = function() {
     if (window.location.search.indexOf('?blog') !== -1) {
-      clearTimeout(time);
+      clearTimeout();
     }
   }
 
