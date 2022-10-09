@@ -48,7 +48,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
     i++;
     console.log(i);
     let time = setTimeout(result, 2000);
-    if (i >= 2) {
+    if (i >= 5) {
       clearTimeout(time);
     }
   }
