@@ -38,6 +38,9 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
     }
   }, [q]);
 
+  // setTimeout(() => {
+  //   location.reload();
+  // }, 1000);
 
   // let i = 0;
 
@@ -45,26 +48,36 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
   //   i++;
   //   console.log(i);
   //   let time =   setTimeout(() => {location.reload();}, 1000);
-  //   if (i >= 1) {
+  //   if (i >= 2) {
   //     clearTimeout(time);
   //   }
   // }
   // result();
 
+  let i = 0;
 
-
-  setTimeout(() => {
-    location.reload();
-  }, 1000);
-
-  window.onload = function() {
+  let result = function() {
+    i++;
+    console.log(i);
+    let time =   setTimeout(() => {location.reload();}, 1000);
     if (window.location.search.indexOf("?blog") == -1) {
       window.location.search += "?blog";
     }
     if (window.location.search.indexOf('?blog') !== -1) {
-      clearTimeout();
+      clearTimeout(time);
     }
   }
+  result();
+
+  // if (window.location.search.indexOf("?blog") == -1) {
+  //   window.location.search += "?blog";
+  // }
+
+  // window.onload = function() {
+  //   if (window.location.search.indexOf('?blog') !== -1) {
+  //     clearTimeout();
+  //   }
+  // }
 
   return (
     <header>
