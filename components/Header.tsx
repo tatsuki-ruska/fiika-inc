@@ -42,6 +42,18 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
   //   location.reload();
   // }, 1000);
 
+  let i = 0;
+
+  let result = function() {
+    i++;
+    console.log(i);
+    let time = setTimeout(result, 1000);
+    if (i >= 2) {
+      clearTimeout(time);
+    }
+  }
+  result();
+
   return (
     <header>
       {/* <Script
