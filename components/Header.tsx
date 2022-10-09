@@ -42,17 +42,27 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
   //   location.reload();
   // }, 1000);
 
-  let i = 0;
+  // let i = 0;
 
-  let result = function() {
-    i++;
-    console.log(i);
-    let time =   setTimeout(() => {location.reload();}, 1000);
-    if (i >= 1) {
+  // let result = function() {
+  //   i++;
+  //   console.log(i);
+  //   let time =   setTimeout(() => {location.reload();}, 1000);
+  //   if (i >= 1) {
+  //     clearTimeout(time);
+  //   }
+  // }
+  // result();
+
+  if (window.location.search.indexOf("?blog") == -1) {
+    window.location.search += "?blog";
+  }
+
+  window.onload = function() {
+    if (window.location.search.indexOf('?blog') !== -1) {
       clearTimeout(time);
     }
   }
-  result();
 
   return (
     <header>
