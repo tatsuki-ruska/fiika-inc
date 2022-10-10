@@ -4,10 +4,10 @@ const SUB_DIRECTORY = "/blog";
 const isProd = process.env.NODE_ENV == "production";
 
 module.exports = {
-  trailingSlash: true,
   basePath: isProd ? SUB_DIRECTORY : "",
   assetPrefix: isProd ? SUB_DIRECTORY : "",
   publicRuntimeConfig: {
     basePath: isProd ? SUB_DIRECTORY : "",
   },
+  trailingSlash: true,
 };
