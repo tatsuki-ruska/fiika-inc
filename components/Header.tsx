@@ -46,7 +46,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
     if (window.location.search.indexOf('?blog') !== -1) {
       clearTimeout();
     }
-  }, 500);
+  }, 5000);
 
   // let i = 0;
 
