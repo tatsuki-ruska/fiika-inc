@@ -17,13 +17,14 @@ export function Footer({ app }: { app: AppMeta }) {
             <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/"><a>サービス内容一覧</a></Link></li>
             <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/web/"><a>ホームページ制作</a></Link></li>
             <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/ia/"><a>UI/UX・情報設計</a></Link></li>
+            <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/consulting/"><a>ウェブコンサルティング</a></Link></li>
             <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/writing/"><a>記事作成代行サービス</a></Link></li>
           </ul>
         </li>
         <li className="has-child footer-arrow dropdown"><a>Works</a>
           <ul>
             <li className="dropdown-category footer-arrow">Works</li>
-            <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/blog/tag/works.html"><a>制作実績・コンサルティング実績</a></Link></li>
+            <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/blog/tag/works/"><a>制作実績・コンサルティング実績</a></Link></li>
           </ul>
         </li>
         <li className="has-child footer-arrow dropdown"><a>About</a>

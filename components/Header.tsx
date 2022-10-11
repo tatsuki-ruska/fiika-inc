@@ -123,10 +123,11 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
                   <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/"><a>サービス内容一覧</a></Link></li>
                   <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/web/"><a>ホームページ制作</a></Link></li>
                   <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/ia/"><a>UI/UX・情報設計</a></Link></li>
+                  <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/consulting/"><a>ウェブコンサルティング</a></Link></li>
                   <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/writing/"><a>記事作成代行サービス</a></Link></li>
                 </ul>
               </li>
-              <li><a href="https://fiika-inc.sakura.ne.jp/blog/tag/works.html" className="round_arrow dropdown">Works</a></li>
+              <li><a href="https://fiika-inc.sakura.ne.jp/blog/tag/works/" className="round_arrow dropdown">Works</a></li>
               <li className="has-child round_arrow dropdown"><a>About</a>
                 <ul className="ul-about">
                   <li className="dropdown-category round_arrow">About</li>
