@@ -22,7 +22,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
 
 //     const scriptUrl = document.createElement('script');
 //     scriptUrl.type = 'text/javascript';
-//     scriptUrl.src = 'https://fiika-inc.sakura.ne.jp/assets/js/main.js';
+//     scriptUrl.src = 'https://www.fiika-inc.co.jp/assets/js/main.js';
 //     head.appendChild(scriptUrl);
 // }, []);
 
@@ -93,23 +93,23 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
         strategy="afterInteractive"
       />
       <Script
-        src="https://fiika-inc.sakura.ne.jp/assets/js/blog.js"
+        src="https://www.fiika-inc.co.jp/assets/js/blog.js"
         strategy="afterInteractive"
       /> */}
       <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer />
-      <script src="https://fiika-inc.sakura.ne.jp/assets/js/blog.js" defer />
+      <script src="https://www.fiika-inc.co.jp/assets/js/blog.js" defer />
       <div className="inner">
         <div className="header-top">
           <p className="txt-description">株式会社フィーカは、東京都あきる野市のウェブ制作・情報設計・システム開発・ウェブコンサルの会社です。</p>
           <div className="ht-inner">
-            <p><Link href="https://fiika-inc.sakura.ne.jp/access/"><a>Access Map</a></Link></p>
-            <button><Link href="https://fiika-inc.sakura.ne.jp/contact/"><a>Contact</a></Link></button>
+            <p><Link href="https://www.fiika-inc.co.jp/access/"><a>Access Map</a></Link></p>
+            <button><Link href="https://www.fiika-inc.co.jp/contact/"><a>Contact</a></Link></button>
           </div>
         </div>
         <div className="header-bottom">
           <div className="logo-wrap">
             <p className="logo">
-              <Link href="https://fiika-inc.sakura.ne.jp/">
+              <Link href="https://www.fiika-inc.co.jp/">
                 <a><img src="/img/img-logo-01.png" /></a>
               </Link>
             </p>
@@ -120,36 +120,36 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
               <li className="has-child round_arrow dropdown"><a>Service</a>
                 <ul className="ul-service">
                   <li className="dropdown-category round_arrow">Service</li>
-                  <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/"><a>サービス内容一覧</a></Link></li>
-                  <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/web/"><a>ホームページ制作</a></Link></li>
-                  {/* <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/ia/"><a>UI/UX・情報設計</a></Link></li> */}
-                  <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/consulting/"><a>ウェブコンサルティング</a></Link></li>
-                  <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/service/writing/"><a>記事作成代行サービス</a></Link></li>
+                  <li className="dropdown-list"><Link href="https://www.fiika-inc.co.jp/service/"><a>サービス内容一覧</a></Link></li>
+                  <li className="dropdown-list"><Link href="https://www.fiika-inc.co.jp/service/web/"><a>ホームページ制作</a></Link></li>
+                  {/* <li className="dropdown-list"><Link href="https://www.fiika-inc.co.jp/service/ia/"><a>UI/UX・情報設計</a></Link></li> */}
+                  <li className="dropdown-list"><Link href="https://www.fiika-inc.co.jp/service/consulting/"><a>ウェブコンサルティング</a></Link></li>
+                  <li className="dropdown-list"><Link href="https://www.fiika-inc.co.jp/service/writing/"><a>記事作成代行サービス</a></Link></li>
                 </ul>
               </li>
-              <li><a href="https://fiika-inc.sakura.ne.jp/blog/tag/works/" className="round_arrow dropdown">Works</a></li>
+              <li><a href="https://www.fiika-inc.co.jp/blog/tag/works/" className="round_arrow dropdown">Works</a></li>
               <li className="has-child round_arrow dropdown"><a>About</a>
                 <ul className="ul-about">
                   <li className="dropdown-category round_arrow">About</li>
-                  <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/about/"><a>会社概要</a></Link></li>
-                  <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/about/topmessage/"><a>トップメッセージ</a></Link></li>
+                  <li className="dropdown-list"><Link href="https://www.fiika-inc.co.jp/about/"><a>会社概要</a></Link></li>
+                  <li className="dropdown-list"><Link href="https://www.fiika-inc.co.jp/about/topmessage/"><a>トップメッセージ</a></Link></li>
                 </ul>
               </li>
               <li className="has-child round_arrow dropdown"><a>Careers</a>
                 <ul>
                   <li className="dropdown-category round_arrow">Careers</li>
-                  <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/careers/"><a>採用情報</a></Link></li>
-                  <li className="dropdown-list"><Link href="https://fiika-inc.sakura.ne.jp/careers/entry/"><a>採用エントリー</a></Link></li>
+                  <li className="dropdown-list"><Link href="https://www.fiika-inc.co.jp/careers/"><a>採用情報</a></Link></li>
+                  <li className="dropdown-list"><Link href="https://www.fiika-inc.co.jp/careers/entry/"><a>採用エントリー</a></Link></li>
                 </ul>
               </li>
-              <li><a href="https://fiika-inc.sakura.ne.jp/blog/" className="round_arrow dropdown">Blog & Topics</a></li>
-              <li className="menu-access"><Link href="https://fiika-inc.sakura.ne.jp/access/"><a className="round_arrow dropdown">Access Map</a></Link></li>
-              <li className="nav-button"><button><Link href="https://fiika-inc.sakura.ne.jp/contact/"><a>Contact</a></Link></button></li>
+              <li><a href="https://www.fiika-inc.co.jp/blog/" className="round_arrow dropdown">Blog & Topics</a></li>
+              <li className="menu-access"><Link href="https://www.fiika-inc.co.jp/access/"><a className="round_arrow dropdown">Access Map</a></Link></li>
+              <li className="nav-button"><button><Link href="https://www.fiika-inc.co.jp/contact/"><a>Contact</a></Link></button></li>
 
               <div className="nav-bottom">
                         <p className="privacypolicy">
-                            <Link href="https://fiika-inc.sakura.ne.jp/privacypolicy/"><a>プライバシーポリシー</a></Link>
-                            <Link href="https://fiika-inc.sakura.ne.jp/Security/"><a>情報セキュリティ方針</a></Link>
+                            <Link href="https://www.fiika-inc.co.jp/privacypolicy/"><a>プライバシーポリシー</a></Link>
+                            <Link href="https://www.fiika-inc.co.jp/Security/"><a>情報セキュリティ方針</a></Link>
                         </p>
               </div>
             </ul>
